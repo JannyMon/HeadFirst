@@ -88,7 +88,7 @@ OBJS:=$(patsubst $(SRCDIR)/%.c, $(SRCDIR)/%.o, $(wildcard $(SRCDIR)/*.c))
 
 OBJS+=$(patsubst $(SRCDIR)/%.cpp, $(SRCDIR)/%.o, $(wildcard $(SRCDIR)/*.cpp))
 
-TARGET := DecoratorModel
+TARGET := StrategyModel
 
 .PHONY : clean all 
 
@@ -101,4 +101,3 @@ $(TARGET):$(OBJS)
 clean:
 	rm -f $(TARGET)
 	rm -f $(OBJS)
-
